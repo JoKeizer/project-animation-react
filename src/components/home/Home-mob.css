@@ -1,0 +1,22 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+
+  min-width: 30ch;
+  min-height: 30ch;
+  width: 25vw;
+  height: 25vw;
+  max-width: 50ch;
+  max-height: 50ch;
+  background-image: url('../../Assets/lion.png');
+  z-index: -1;
+}

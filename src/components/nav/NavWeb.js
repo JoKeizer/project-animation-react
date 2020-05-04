@@ -6,29 +6,20 @@ import { animateScroll as scroll } from 'react-scroll';
 
 import './Nav.css';
 
-const Nav = ({isOpen}) => {
+const NavWeb = ({isOpen}) => {
     const [menuStatus, setmenu] = useState(true);
-
-    // isOpen = menuStatus
-
 
     useEffect(() => {
         isOpen = menuStatus
-        console.log("isOpen", isOpen)
-        console.log("menuStatus", menuStatus)
       }, [menuStatus]);
 
       console.log("menuStatus", menuStatus)
 
       if(isOpen && menuStatus === true) {
-          console.log("leave menu open")
           isOpen = true
       } else {
         isOpen = false
-          console.log("Close menu")
       }
-
-
 
     const { x } = useSpring({
         x: isOpen ? 0 : 100,
@@ -119,4 +110,4 @@ const Nav = ({isOpen}) => {
 }
 
 
-export default Nav
+export default NavWeb
