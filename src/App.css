@@ -1,23 +1,43 @@
 :root {
     --pink: #fdcad1;
-    --darkPurp: #373142;
-    --xtraPurp: #191324;
-    --grey: #d8d8d8;
-    --teal: #82d8d8;
-    --red: #e54b4b;
-    --black: #333;
-    --black-20: #4f4f4f;
-    --black-40: #828282;
-    --black-60: #bdbdbd;
-    --white-60: #e0e0e0;
-    --white-40: #f2f2f2;
-    --white-20: #f5f4f6;
     --white: #fff;
+    --maxWidthContainer: 900px;
+    --maxWidthContainerMobile: 400px;
   }
   
   body {
     background-color: #282c34;
   }
+
+
+html {
+  font-size: 17px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: var(--primaryFont);
+  font-size: 1.2em;
+  color: var(--black)
+}
   
   .App {
     text-align: center;

@@ -20,7 +20,7 @@ const App = () => {
   const navAnimation = useSpring({
     transform: isNavOpen 
     ? `translate3d(0, 0, 0) scale(1)` 
-    : `translate3d(100%, 0, 0) scale(0.6)`
+    : `translate3d(0, 0%, 0) scale(0)`
   })
 
   const [sizeType, setSizeType] = useState(getSizeType());
@@ -47,7 +47,7 @@ const App = () => {
           <Fragment>
           <button onClick={() => setNavOpen(!isNavOpen)}className="menu-button">Mob</button> 
 
-          <NavMob style={navAnimation}/>
+          <NavMob isOpen={isMenuOpen} style={navAnimation}/>
           </Fragment>
         )}
       

@@ -13,7 +13,6 @@ const NavWeb = ({isOpen}) => {
         isOpen = menuStatus
       }, [menuStatus]);
 
-      console.log("menuStatus", menuStatus)
 
       if(isOpen && menuStatus === true) {
           isOpen = true
@@ -25,10 +24,6 @@ const NavWeb = ({isOpen}) => {
         x: isOpen ? 0 : 100,
         config: config.molasses
     });
-
-    const props = useSpring({
-        config: config.molasses
-    })
 
 
     return (
@@ -82,25 +77,6 @@ const NavWeb = ({isOpen}) => {
         <Link onClick={() => setmenu(false)} to='posts'>Berichten</Link>
       </animated.li>
     </ul>
-                
-               
-                {/* <animated.a style={{
-            
-                transform: x.interpolate( x => `translate3d(${x * 1}%, 0, 0)`)
-            }} href='#'>Home</animated.a>
-                <animated.a style={{
-                transform: x.interpolate( x => `translate3d(${x * 2}%, 0, 0)`)
-            }}href='#'>Coco's info</animated.a>
-                <animated.a style={{
-                transform: x.interpolate( x => `translate3d(${x * 3}%, 0, 0)`)
-            }} href='#'>Foto's</animated.a>
-                <animated.a style={{
-                transform: x.interpolate( x => `translate3d(${x * 4}%, 0, 0)`)
-            }} href='#'>Laat een berichtje achter</animated.a>
-                <animated.a style={{
-                transform: x.interpolate( x => `translate3d(${x * 5}%, 0, 0)`)
-            }}href='#'>Profiel</animated.a> */}
-
 
             </nav>
                 </div>
